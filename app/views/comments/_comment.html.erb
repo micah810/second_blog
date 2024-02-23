@@ -1,0 +1,11 @@
+<% unless comment.archived? %> <!--use the archived? method to avoid displaying any comment that is archived-->
+    <p>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+<% end %>
